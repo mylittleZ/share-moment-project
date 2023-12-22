@@ -3,8 +3,10 @@ import { Container, Grow, Grid } from '@mui/material';
 import { StyledAppBar, StyledTypography, StyledImage } from './styles';
 import Posts from './components/Posts/Posts';
 import Form from './components/Form/Form';
+import { useDispatch } from 'react-redux';
 
 const App = () => {
+    const dispatch = useDispatch();
     return (
         <Container maxWidth="lg">
             <StyledAppBar position="static" color="inherit">
